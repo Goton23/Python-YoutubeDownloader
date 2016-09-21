@@ -1,5 +1,5 @@
 import socket, subprocess
-HOST = '192.168.2.111'
+HOST = socket.gethostbyname(socket.gethostname())
 PORT = 443
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
